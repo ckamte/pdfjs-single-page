@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>pdf-js</title>
+
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'/> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+	<link rel="stylesheet" href="assets/css/myviewer.css"/>
+</head>
+<body>
+	<div class="container-fluid">
+    
+		<div class="text-center">
+			<div>
+				<span id="pdftitle"></span> - <span id="pdfauthor"></span>
+			</div>
+			<div id="viewer" class="pdfViewer"></div>
+		</div>
+		<div class="fixed-bottom pdf-nav">
+			<div>
+				<a id="prev" href="#"><i class="fas fa-arrow-alt-circle-left"></i></a>
+				&nbsp;
+				<span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+				&nbsp;
+				<a id="next" href="#"><i class="fas fa-arrow-alt-circle-right"></i></a>
+				&nbsp; &nbsp; &nbsp; &nbsp;
+				<a id="zoomin" href="#"><i class="fas fa-search-plus"></i></a>
+				&nbsp;
+				<a id="zoomreset" href="#"><i class="fas fa-redo"></i></a>
+				&nbsp;
+				<a id="zoomout" href="#"><i class="fas fa-search-minus"></i></a>
+			</div>
+		</div>
+	</div>
+
+<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script src='assets/js/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+
+<script src='assets/pdfjs/pdf.js'></script>
+<script src="assets/js/text_layer_builder.js"></script>
+<script src='assets/js/myviewer.js'></script>
+	 
+</body>
+</html>
